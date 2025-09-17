@@ -1,0 +1,44 @@
+.Navbar {
+    overflow: hidden;
+    background-color: #81663E;
+}
+
+.Navbar img {
+    float: left;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Navbar button {
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    font-size: 20px;
+    background-color: #FBE79C;
+    border: 1px solid  #81663E ;
+    cursor: pointer;
+}
+
+.Navbar button:hover {
+    background-color: #fac35c;
+    color: black;
+}
+
+.Navbar3 button {
+    background-color: #be9547;
+}
+
+.Navbar2 button {
+    background-color: #be9547;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #81663E;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
