@@ -1,11 +1,11 @@
 function goToHome() {
-    window.location.href = "page1HOME.html";
+    window.location.href = "index.html";
 }
 
 function goToTELEVISIONS() {
-    window.location.href = "page2TELEVISIONS.html";
+    window.location.href = "televisions.html";
 }
 
 function goToAboutUs() {
-    window.location.href = "page3ABOUTUS.html";
+    window.location.href = "about.html";
 }
