@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Energy consumption website</title>
+    <title>Energy Consumption Website</title>
     <meta charset="utf-8">
     <meta name="description" content="Data Visualisation">
     <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -9,29 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="Navbar">
-    <img src="PowerLogo.png" alt="Logo" style="height:50px;">
-
-    <div class="Navbar3"> 
-    <button onclick="goToHome()">Home</button>
-    </div>
-
-    <button onclick="goToTELEVISIONS()">Televisions</button>
-    <button onclick="goToAboutUs()">About Us</button>
-
-
-<script src="script.js"></script>
-</div>
-<footer>
-    <div class="footer">
+    <div class="container">
+        <div class="Navbar">
+            <img onclick="goToHome()" src="PowerLogo.png" alt="Power Logo">
+            
+            <div class="Navbar3"> 
+                <button onclick="goToHome()">Home</button>
+            </div>
+            
+            <button onclick="goToTelevisions()">Televisions</button>
+            <button onclick="goToAboutUs()">About Us</button>
+        </div>
         
-        <h3>Some of the code was created by asking Bing AI for examples and clarification.</h3>
-        <H4>2025//SITIHASYA</H4>
-
+        <h1>Welcome to the Energy Consumption Website</h1>
+        
+        <div class="footer">
+            <h3>Some of the code was created with assistance from AI tools for examples and clarification.</h3>
+            <h4>2025 // SITI HASYA</h4>
+            <div id="date-time"></div>
+        </div>
     </div>
-</footer>
-
-
-
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>

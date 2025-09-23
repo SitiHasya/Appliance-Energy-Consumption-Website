@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Energy consumption website</title>
     <meta charset="utf-8">
@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="Navbar">
-    <img onclick="goToHome()" src="PowerLogo.png" alt="Logo" style="height:50px;">
-    <button onclick="goToHome()">Home</button>
-    <div class="Navbar2">
-        <button onclick="goToTELEVISIONS()">Televisions</button>
+    <div class="container">
+        <div class="Navbar">
+            <img onclick="goToHome()" src="PowerLogo.png" alt="Logo">
+            <button onclick="goToHome()">Home</button>
+            <div class="Navbar3">
+                <button onclick="goToTelevisions()">Televisions</button>
+            </div>
+            <button onclick="goToAboutUs()">About Us</button>
+        </div>
+        <h2>Televisions</h2>
+        <p>Household appliances and equipment account for an average of 25% of total residential energy consumption across Australia.<br>
+            However, this proportion will vary by household depending on the climate, the types of appliances in your home, and the way they are used.</p>
+        <div class="footer">
+            <h3>Some of the code was created with assistance from AI tools for examples and clarification.</h3>
+            <h4>2025 // SITI HASYA</h4>
+            <div id="date-time"></div>
+        </div>
     </div>
-    <button onclick="goToAboutUs()">About Us</button>
-</div>
-<h2>Televisions</h2>
-<p>Household appliances and equipment account for an average of 25% of total residential energy consumption across Australia. <br>
-     However, this proportion will vary by household depending on the climate, the types of appliances in your home, and the way they are used. </p>
-<footer>
-    <div class="footer">
-        <h3>Some of the code was created by asking Bing AI for examples and clarification.</h3>
-        <H4>2025//SITIHASYA</H4>
-    </div>
-</footer>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

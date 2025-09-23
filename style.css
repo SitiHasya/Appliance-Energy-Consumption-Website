@@ -1,44 +1,160 @@
-.Navbar {
-    overflow: hidden;
-    background-color: #81663E;
-}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh; /* Ensure container fills viewport */
+        }
+        
+        .Navbar {
+            overflow: hidden;
+            background-color: #81663E;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.Navbar img {
-    float: left;
-    padding: 20px;
-    cursor: pointer;
-}
+        .Navbar img {
+            height: 50px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
 
-.Navbar button {
-    float: left;
-    color: rgb(0, 0, 0);
-    padding: 40px;
-    font-size: 20px;
-    background-color: #FBE79C;
-    border: 1px solid  #81663E ;
-    cursor: pointer;
-}
+        .Navbar button {
+            color: rgb(0, 0, 0);
+            padding: 20px 25px;
+            font-size: 18px;
+            background-color: #FBE79C;
+            border: 1px solid #81663E;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.Navbar button:hover {
-    background-color: #fac35c;
-    color: black;
-}
+        .Navbar button:hover {
+            background-color: #fac35c;
+        }
+        
+        .Navbar3 button {
+            background-color: #be9547;
+        }
 
-.Navbar3 button {
-    background-color: #be9547;
-}
+        .hero {
+            background: linear-gradient(rgba(129, 102, 62, 0.8), rgba(129, 102, 62, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%2381663E"/><path d="M0 0L100 100" stroke="%23FBE79C" stroke-width="2"/><path d="M100 0L0 100" stroke="%23FBE79C" stroke-width="2"/></svg>');
+            padding: 60px 30px;
+            text-align: center;
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #81663E;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FBE79C;
+            padding-bottom: 10px;
+        }
+        
+        .card p {
+            margin-bottom: 15px;
+        }
+        
+        .card ul {
+            padding-left: 20px;
+        }
+        
+        .card li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #81663E;
+            color: #FBE79C;
+            border-radius: 8px;
+            margin-top: 30px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .footer h3, .footer h4 {
+            margin: 5px 0;
+        }
 
-.Navbar2 button {
-    background-color: #be9547;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #81663E;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+        #date-time {
+            text-align: center;
+            margin-top: 8px;
+            color: #FBE79C;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 768px) {
+            .Navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .Navbar button {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
