@@ -11,12 +11,9 @@ function goToAboutUs() {
 }
 
 
-function highlightActiveNav() {
-   
-}
 
 window.onload = function() {
-    highlightActiveNav();
+
     showDateTime();
 };
 

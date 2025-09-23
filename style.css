@@ -16,7 +16,7 @@
             margin: 0 auto;
             padding: 20px;
             position: relative;
-            min-height: 100vh; /* Ensure container fills viewport */
+            min-height: 100vh; 
         }
         
         .Navbar {
