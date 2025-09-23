@@ -1,9 +1,9 @@
 function goToHome() {
-    window.location.href = "Index.html";
+    window.location.href = "index.html";
 }
 
 function goToTelevisions() {
-    window.location.href = "Televisions.html";
+    window.location.href = "televisions.html";
 }
 
 function goToAboutUs() {
