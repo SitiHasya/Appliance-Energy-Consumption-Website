@@ -14,17 +14,16 @@ function goToAboutUs() {
 
 window.onload = function() {
 
-    showDateTime();
+    showyear();
 };
 
-function showDateTime() {
-    var dtElem = document.getElementById('date-time');
+function showyear() {
+    var dtElem = document.getElementById('year');
     if (!dtElem) return;
     function update() {
         var now = new Date();
         var year = now.getFullYear();
-        var time = now.toLocaleTimeString();
-        dtElem.textContent = ` ${time} | Year: ${year}`;
+        dtElem.textContent = `Year: ${year}`;
     }
     update();
     setInterval(update, 1000);
