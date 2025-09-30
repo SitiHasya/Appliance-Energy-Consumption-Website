@@ -13,18 +13,15 @@ function goToAboutUs() {
 
 
 window.onload = function() {
-
+    
     showyear();
 };
 
 function showyear() {
     var dtElem = document.getElementById('year');
     if (!dtElem) return;
-    function update() {
-        var now = new Date();
-        var year = now.getFullYear();
-        dtElem.textContent = `Year: ${year}`;
-    }
-    update();
-    setInterval(update, 1000);
+    
+    var now = new Date();
+    var year = now.getFullYear();
+    dtElem.textContent = `Year: ${year}`;
 }
